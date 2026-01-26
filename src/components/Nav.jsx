@@ -1,5 +1,5 @@
 import { RiAppleFill, RiBatteryFill, RiSearchLine, RiWifiLine } from '@remixicon/react'
-import React from 'react'
+
 
 const Nav = () => {
     const text = "text-white text-[0.9rem]"
