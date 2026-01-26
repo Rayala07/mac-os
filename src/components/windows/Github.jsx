@@ -1,0 +1,42 @@
+import { useEffect, useState } from 'react'
+import MacWindow from './MacWindow'
+import axios from 'axios'
+
+const Github = () => {
+    const [repos, setRepos] = useState([])
+
+    // Function to fetchl the the API
+    const fetchRepos = async() => {
+        const getData = await axios.get("https://api.github.com/search/repositories?q=stars:>50000&sort=stars&order=desc")
+
+        setRepos(getData.data.items.slice(0,5));
+    }
+
+    // Fetch Repos using Github API
+    useEffect(() => {
+        fetchRepos();
+    }, [])
+
+    return (
+    <MacWindow>
+        <div className='text-white text-sm p-3 flex flex-col gap-2.5'>
+           <p className='text-xs opacity-60 mb-1'>Trending Repositories</p>
+           {repos.map((repo) => {
+            return <div key={repo.id}
+            className='bg-white/5 hover:bg-white/10 transition rounded-md p-2 cursor-pointer'
+            onClick={() => window.open(repo.html_url, "_blank")}
+            >
+                <p>{repo.name}</p>
+                <p>{repo.description}</p>
+                <div>
+                    <span>{repo.language}</span>
+                    <span>⭐ {repo.stargazers_count}</span>
+                </div>
+            </div>
+           })}
+        </div>
+    </MacWindow>
+  )
+}
+
+export default Github
