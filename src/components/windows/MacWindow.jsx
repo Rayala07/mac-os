@@ -6,14 +6,14 @@ const MacWindow = ({children}) => {
     <Rnd
     default={
         {
-            width:"40vw",
+            width:"35vw",
             height:"40vh",
             x:"300",
             y:"200"
         }
     }
     >
-        <div id="window" className="bg-black h-80 w-90 text-[#adadad] font-sans h-[100%] overflow-hidden">
+        <div id="window" className="bg-black text-[#adadad] font-sans h-full flex flex-col">
             <div id="nav" className="flex items-center gap-5 px-2 py-1 border-b border-gray-600">
                 <div id="dots" className="flex gap-1.5">
                     <div id="red" className="h-3.75 w-3.75 rounded-[50%] bg-red-600"></div>
@@ -24,7 +24,7 @@ const MacWindow = ({children}) => {
                     <p className="text-[0.9rem]">rayalaviswanath - zsh</p>
                 </div>
             </div>
-            <div id="content" className="overflow-scroll">
+            <div id="content" className="flex-1 overflow-y-auto">
                 {children}
             </div>
         </div>

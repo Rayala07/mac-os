@@ -23,12 +23,12 @@ const Github = () => {
            <p className='text-xs opacity-60 mb-1'>Trending Repositories</p>
            {repos.map((repo) => {
             return <div key={repo.id}
-            className='bg-white/5 hover:bg-white/10 transition rounded-md p-2 cursor-pointer'
+            className='bg-white/5 hover:bg-white/10 transition duration-300 rounded-md p-2 cursor-pointer'
             onClick={() => window.open(repo.html_url, "_blank")}
             >
-                <p>{repo.name}</p>
-                <p>{repo.description}</p>
-                <div>
+                <p className='font-medium text-sm'>{repo.name}</p>
+                <p className='text-[11px] opacity-60 truncate'>{repo.description}</p>
+                <div className='flex gap-3 text-[10px] opacity-60 mt-1'>
                     <span>{repo.language}</span>
                     <span>⭐ {repo.stargazers_count}</span>
                 </div>
