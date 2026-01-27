@@ -2,6 +2,7 @@ import Dock  from "./components/Dock.jsx"
 import Nav from "./components/Nav.jsx"
 import Github from "./components/windows/Github.jsx"
 import Notes from "./components/windows/Notes.jsx"
+import Terminal from "./components/windows/Terminal.jsx"
 
 const App = () => {
   return (
@@ -9,8 +10,10 @@ const App = () => {
       <Nav />
       <Dock />
 
+      {/* Windows */}
       <Github />
       <Notes />
+      <Terminal />
     </main>
   )
 }

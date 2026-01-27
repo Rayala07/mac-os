@@ -16,9 +16,9 @@ const MacWindow = ({children}) => {
         <div id="window" className="bg-black text-[#adadad] font-sans h-full flex flex-col">
             <div id="nav" className="flex items-center gap-5 px-2 py-1 border-b border-gray-600">
                 <div id="dots" className="flex gap-1.5">
-                    <div id="red" className="h-3.75 w-3.75 rounded-[50%] bg-red-600"></div>
-                    <div id="yellow" className="h-3.75 w-3.75 rounded-[50%] bg-yellow-400"></div>
-                    <div id="green" className="h-3.75 w-3.75 rounded-[50%] bg-green-600"></div>
+                    <div id="red" className="h-3 w-3 rounded-[50%] bg-red-600"></div>
+                    <div id="yellow" className="h-3 w-3 rounded-[50%] bg-yellow-400"></div>
+                    <div id="green" className="h-3 w-3 rounded-[50%] bg-green-600"></div>
                 </div>
                 <div id="title">
                     <p className="text-[0.9rem]">rayalaviswanath - zsh</p>
