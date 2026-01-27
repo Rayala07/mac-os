@@ -19,9 +19,10 @@ const GitWindow = () => {
     }, [])
 
     return (
-        <div className='text-white text-sm p-3 flex flex-col gap-2.5'>
+        <div className='text-white text-sm p-3 flex flex-col gap-2 h-full'>
            <p className='text-xs opacity-60 mb-1'>Trending Repositories</p>
-           {repos.map((repo) => {
+           <div className='flex-1 flex flex-col gap-3 overflow-y-auto [&::-webkit-scrollbar]:hidden'>
+            {repos.map((repo) => {
             return <div key={repo.id}
             className='bg-white/5 hover:bg-white/10 transition duration-300 rounded-md p-2 cursor-pointer'
             onClick={() => window.open(repo.html_url, "_blank")}
@@ -34,6 +35,7 @@ const GitWindow = () => {
                 </div>
             </div>
            })}
+           </div>
         </div>
     )
 }
