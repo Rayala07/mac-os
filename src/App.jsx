@@ -2,6 +2,7 @@ import Dock  from "./components/Dock.jsx"
 import Nav from "./components/Nav.jsx"
 import Github from "./components/windows/Github.jsx"
 import Notes from "./components/windows/Notes.jsx"
+import Spotify from "./components/windows/Spotify.jsx"
 import Terminal from "./components/windows/Terminal.jsx"
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Github />
       <Notes />
       <Terminal />
+      <Spotify />
     </main>
   )
 }
