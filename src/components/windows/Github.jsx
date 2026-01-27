@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import MacWindow from './MacWindow'
 import axios from 'axios'
 
-const Github = () => {
+const GitWindow = () => {
+
     const [repos, setRepos] = useState([])
 
     // Function to fetchl the the API
@@ -18,7 +19,6 @@ const Github = () => {
     }, [])
 
     return (
-    <MacWindow>
         <div className='text-white text-sm p-3 flex flex-col gap-2.5'>
            <p className='text-xs opacity-60 mb-1'>Trending Repositories</p>
            {repos.map((repo) => {
@@ -35,6 +35,13 @@ const Github = () => {
             </div>
            })}
         </div>
+    )
+}
+
+const Github = () => {
+    return (
+    <MacWindow>
+        <GitWindow />
     </MacWindow>
   )
 }
