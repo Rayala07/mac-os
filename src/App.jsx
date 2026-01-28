@@ -1,5 +1,6 @@
 import Dock  from "./components/Dock.jsx"
 import Nav from "./components/Nav.jsx"
+import Calendar from "./components/windows/Calendar.jsx"
 import Github from "./components/windows/Github.jsx"
 import Notes from "./components/windows/Notes.jsx"
 import Pdf from "./components/windows/Pdf.jsx"
@@ -18,6 +19,7 @@ const App = () => {
       <Terminal />
       <Spotify />
       <Pdf />
+      <Calendar />
     </main>
   )
 }
