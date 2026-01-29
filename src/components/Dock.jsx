@@ -1,4 +1,4 @@
-import { RiCalendar2Fill, RiFilePdf2Line, RiGithubFill, RiLinksFill, RiMailFill, RiSpotifyFill, RiStickyNoteFill, RiTerminalLine } from "@remixicon/react"
+import { RiCalendar2Fill, RiFilePdf2Line, RiGithubFill, RiLinksFill, RiMailFill, RiSafariFill, RiSafariLine, RiSpotifyFill, RiStickyNoteFill, RiTerminalLine } from "@remixicon/react"
 
 const Dock = () => {
 
@@ -19,8 +19,7 @@ const Dock = () => {
         <RiStickyNoteFill className={`w-9 h-9 text-white bg-linear-to-br from-orange-400 to-orange-300 p-1 rounded-md ${iconHover}`} />
         <RiFilePdf2Line className={`w-9 h-9 text-white bg-red-500 p-1 rounded-md ${iconHover}`} />
         <RiSpotifyFill className={`w-9 h-9 text-white bg-green-600 p-1 rounded-md ${iconHover}`} />
-        <RiMailFill className={`w-9.5 h-9 text-white bg-linear-to-br from-blue-600 to-blue-400 p-1 rounded-md ${iconHover}`} />
-        <RiLinksFill className={`w-9 h-9 text-white bg-linear-to-br from-purple-700 to-purple-500 p-1 rounded-md ${iconHover}`} />
+        <RiSafariFill className={`w-9.5 h-9 text-white bg-linear-to-br from-blue-600 to-blue-400 p-1 rounded-md ${iconHover}`} />
     </footer>
   )
 }
