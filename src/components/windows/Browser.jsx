@@ -63,7 +63,7 @@ const BrowserWindow = () => {
                 />
             </div>
 
-            <div className='flex-1 bg-[url("https://images.unsplash.com/photo-1614850523011-8f49ffc73908?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")] overflow-hidden'>
+            <div className='flex-1 bg-[url("https://images.unsplash.com/photo-1614850523011-8f49ffc73908?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")] bg-no-repeat bg-cover overflow-hidden'>
                 {home ? (
                     <div className='h-full w-full flex flex-col items-center justify-center text-center text-black/60 gap-3'>
                         <div className='w-9 h-9 rounded-full overflow-hidden'><img src="https://i.pinimg.com/736x/78/43/c6/7843c6bc850bf551c09d42971fc4721a.jpg" alt="" /></div>
