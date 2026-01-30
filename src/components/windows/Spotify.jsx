@@ -1,9 +1,9 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import MacWindow from './MacWindow'
 
 const SpotifyWindow = () => {
 
-    const playlist = [
+const playlist = [
   {
     id: 1,
     title: "Running Up that Hill",
@@ -37,6 +37,19 @@ const SpotifyWindow = () => {
 const [currentSong, setCurrentSong] = useState(null)
 const [isPlaying, setIsPlaying] = useState(null)
 const audioRef = useRef(null)
+
+useEffect(() => {
+  return () => {
+    if (audioRef.current) {
+      audioRef.current.pause()
+      audioRef.current.currentTime = 0
+      audioRef.current = null
+    }
+
+    setCurrentSong(null)
+    setIsPlaying(false)
+  }
+}, [])
 
 const playSong = (song) => {
     if(audioRef.current) {
