@@ -126,9 +126,9 @@ const togglePlay = () => {
     )
 }
 
-const Spotify = () => {
+const Spotify = ({windowName, setWindowState}) => {
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} setWindowState={setWindowState}>
         <SpotifyWindow />
     </MacWindow>
   )

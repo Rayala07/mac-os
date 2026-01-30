@@ -15,9 +15,9 @@ const PdfWindow = () => {
     </div>
 }
 
-const Pdf = () => {
+const Pdf = ({windowName, setWindowState}) => {
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} setWindowState={setWindowState}>
         <PdfWindow />
     </MacWindow>
   )

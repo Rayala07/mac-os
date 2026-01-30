@@ -87,9 +87,9 @@ const CalendarWindow = () => {
     )
 }
 
-const Calendar = () => {
+const Calendar = ({windowName, setWindowState}) => {
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} setWindowState={setWindowState}>
         <CalendarWindow />
     </MacWindow>
   )

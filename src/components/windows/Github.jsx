@@ -40,9 +40,9 @@ const GitWindow = () => {
     )
 }
 
-const Github = () => {
+const Github = ({windowName,setWindowState}) => {
     return (
-    <MacWindow>
+    <MacWindow windowName={windowName} setWindowState={setWindowState}>
         <GitWindow />
     </MacWindow>
   )

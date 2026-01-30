@@ -73,9 +73,9 @@ const TerminalWindow = () => {
     )
 }
 
-const Terminal = () => {
+const Terminal = ({windowName, setWindowState}) => {
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} setWindowState={setWindowState}>
         <TerminalWindow />
     </MacWindow>
   )

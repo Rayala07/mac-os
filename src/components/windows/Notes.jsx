@@ -57,9 +57,9 @@ const [activeNote, setActiveNote] = useState(notesData[0])
 }
 
 
-const Notes = () => {
+const Notes = ({windowName, setWindowState}) => {
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} setWindowState={setWindowState}>
         <NotesWindow />
     </MacWindow>
   )

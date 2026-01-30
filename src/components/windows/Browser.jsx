@@ -77,9 +77,9 @@ const BrowserWindow = () => {
     )
 }
 
-const Browser = () => {
+const Browser = ({windowName, setWindowState}) => {
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} setWindowState={setWindowState}>
         <BrowserWindow />
     </MacWindow>
   )

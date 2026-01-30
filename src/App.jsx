@@ -27,13 +27,13 @@ const App = () => {
       <Dock windowState={windowState} setWindowState={setWindowState} />
 
       {/* Windows */}
-      {windowState.github && <Github />}
-      {windowState.notes && <Notes />}
-      {windowState.terminal && <Terminal />}
-      {windowState.spotify && <Spotify />}
-      {windowState.pdf && <Pdf />}
-      {windowState.calendar && <Calendar />}
-      {windowState.browser && <Browser />}
+      {windowState.github && <Github windowName="github" setWindowState={setWindowState}/>}
+      {windowState.notes && <Notes windowName="notes" setWindowState={setWindowState}/>}
+      {windowState.terminal && <Terminal windowName="terminal" setWindowState={setWindowState}/>}
+      {windowState.spotify && <Spotify windowName="spotify" setWindowState={setWindowState}/>}
+      {windowState.pdf && <Pdf windowName="pdf" setWindowState={setWindowState}/>}
+      {windowState.calendar && <Calendar windowName="calendar" setWindowState={setWindowState}/>}
+      {windowState.browser && <Browser windowName="browser" setWindowState={setWindowState}/>}
     </main>
   )
 }
