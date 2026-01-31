@@ -18,11 +18,11 @@ const MacWindow = ({children, windowName, setWindowState}) => {
                 <div id="dots" className="flex gap-1.5">
                     <div 
                     id="red" 
-                    className="h-3 w-3 rounded-[50%] bg-red-600 cursor-default"
+                    className="h-3 w-3 rounded-[50%] bg-red-500 cursor-default"
                     onClick={() => (setWindowState((prev) => ({...prev, [windowName]: false})))}
                     ></div>
-                    <div id="yellow" className="h-3 w-3 rounded-[50%] bg-yellow-400"></div>
-                    <div id="green" className="h-3 w-3 rounded-[50%] bg-green-600"></div>
+                    <div id="yellow" className="h-3 w-3 rounded-[50%] bg-yellow-300"></div>
+                    <div id="green" className="h-3 w-3 rounded-[50%] bg-green-400"></div>
                 </div>
                 <div id="title">
                     <p className="text-[0.9rem]">rayalaviswanath - zsh</p>

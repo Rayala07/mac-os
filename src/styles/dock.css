@@ -1,0 +1,42 @@
+.dock-item {
+  height: 52px;
+  width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.icon {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.icon.github {
+  width: 90%;
+}
+.icon.spotify {
+  width: 85%;
+}
+
+/* On hover */
+.dock-item:hover {
+  transform: translateY(-16px) scale(1.25);
+}
+
+/* Icon just after the hovered one */
+.dock-item:hover + .dock-item {
+  transform: translateY(-9px) scale(1.2);
+}
+
+/* Icon just before the hovered one */
+.dock-item:has(+ .dock-item:hover) {
+  transform: translateY(-9px) scale(1.2);
+}
+
+/* Second icon after the hover one */
+.dock-item:hover + .dock-item + .dock-item,
+.dock-item:has(+ .dock-item + .dock-item:hover) {
+  transform: translateY(-4px) scale(1.1);
+}
