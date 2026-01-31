@@ -1,4 +1,4 @@
-import { RiAppleFill, RiBatteryFill, RiSearchLine, RiWifiLine } from '@remixicon/react'
+import { RiAppleFill } from '@remixicon/react'
 
 
 const Nav = () => {
@@ -16,21 +16,25 @@ const Nav = () => {
     })
 
   return (
-    <nav className='flex justify-between items-center px-2 py-1 bg-[#24242451] backdrop-blur-2xl'>
+    <nav className='flex justify-between items-center px-3 py-[0.15rem] bg-[#1a1a1a54] backdrop-blur-md'>
         <div id='left' className='flex justify-between w-[22%]'>
             <RiAppleFill className={`${text} size-5`}/>
             <div id="nav-item" className='flex gap-6'>
-                <p className={`${text}`}>File</p>
-                <p className={`${text}`}>Edit</p>
-                <p className={`${text}`}>View</p>
-                <p className={`${text}`}>Window</p>
-                <p className={`${text}`}>Help</p>
+                <p className={`${text} cursor-pointer`}>File</p>
+                <p className={`${text} cursor-pointer`}>Edit</p>
+                <p className={`${text} cursor-pointer`}>View</p>
+                <p className={`${text} cursor-pointer`}>Window</p>
+                <p className={`${text} cursor-pointer`}>Help</p>
             </div>
         </div>
-        <div id='right' className='flex gap-4'>
-            <RiBatteryFill className={`${text} size-5`}/>
-            <RiWifiLine className={`${text} size-5`}/>
-            <RiSearchLine className={`${text} size-5`}/>
+        <div id='right' className='flex items-center gap-4'>
+            <div className='h-7 w-7'>
+                <img src="/Public/assets/icons/battery.png" alt="" />
+            </div>
+            <div className='h-5.5 w-5.5'>
+                <img src="/Public/assets/icons/wifi.png" alt="" />
+            </div>
+
             <div className={`${text} flex gap-3`}>
                 <div className='flex gap-1'>
                     <p>{dayName}</p>

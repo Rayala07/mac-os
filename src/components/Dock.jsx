@@ -14,13 +14,16 @@ const Dock = ({setWindowState}) => {
     >
         <div className="dock-item">
           <img 
+          onClick={() => (setWindowState((prev) => ({...prev, github:true})))}
           src="../../Public/assets/icons/github.png" 
           className="icon github cursor-pointer"
           alt="" 
           />
         </div>
         <div className="dock-item">
-          <img src="../../Public/assets/icons/spotify.png" 
+          <img 
+          onClick={() => (setWindowState((prev) => ({...prev, spotify:true})))}
+          src="../../Public/assets/icons/spotify.png" 
           className="icon spotify cursor-pointer"
           alt="" 
           />
