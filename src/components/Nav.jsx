@@ -16,7 +16,7 @@ const Nav = () => {
     })
 
   return (
-    <nav className='flex justify-between items-center px-3 py-[0.15rem] bg-[#1a1a1a54] backdrop-blur-md'>
+    <nav className='flex justify-between items-center px-3 py-[0.12rem] bg-[#8484844c] backdrop-blur-md'>
         <div id='left' className='flex justify-between w-[22%]'>
             <RiAppleFill className={`${text} size-5`}/>
             <div id="nav-item" className='flex gap-6'>

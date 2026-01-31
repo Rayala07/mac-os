@@ -6,8 +6,8 @@ const Dock = ({setWindowState}) => {
   return (
     <footer className="flex gap-2 items-center
             absolute bottom-4 left-1/2 -translate-x-1/2
-            px-7 py-2.5
-            bg-[#71717162]
+            px-7 py-[0.4rem]
+            bg-[#84848462]
             backdrop-blur-md
             rounded-xl
             "
